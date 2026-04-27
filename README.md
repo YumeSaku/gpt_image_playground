@@ -124,7 +124,7 @@ VITE_DEFAULT_API_URL=https://api.openai.com/v1
 ```bash
 docker run -d -p 8080:80 \
   -e API_URL=https://api.openai.com/v1 \
-  ghcr.io/cooksleep/gpt_image_playground:latest
+  ghcr.io/yumesaku/gpt_image_playground:latest
 ```
 
 **使用 Docker Compose：**
@@ -132,7 +132,7 @@ docker run -d -p 8080:80 \
 ```yaml
 services:
   gpt-image-playground:
-    image: ghcr.io/cooksleep/gpt_image_playground:latest
+    image: ghcr.io/yumesaku/gpt_image_playground:latest
     environment:
       - API_URL=https://api.openai.com/v1
     ports:
@@ -147,7 +147,7 @@ services:
 **更新说明：**
 
 - 使用 `latest` 标签时，重新拉取镜像并重启容器即可更新到最新发布版本。
-- 如果希望固定版本，建议使用明确版本号标签，例如 `ghcr.io/cooksleep/gpt_image_playground:0.2.3`。
+- 如果希望固定版本，建议使用明确版本号标签，例如 `ghcr.io/yumesaku/gpt_image_playground:0.2.3`。
 - Docker Compose 更新示例：
 
 ```bash
